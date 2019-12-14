@@ -1,17 +1,17 @@
-<script type="text/x-red" data-template-name="hb-conf">
+<script type="text/x-red" data-template-name="HOOBS-Conf">
   <div class="form-row">
 	    <label for="node-config-input-username"><i class="icon-tag"></i> Pin</label>
 	    <input type="text" id="node-config-input-username">
 	</div>
 </script>
 
-<script type="text/x-red" data-help-name="hb-conf">
+<script type="text/x-red" data-help-name="HOOBS-Conf">
   <p>This allows you to register your homebridge PIN</p>
 
 </script>
 
 <script type="text/javascript">
-  RED.nodes.registerType('hb-conf', {
+  RED.nodes.registerType('HOOBS-Conf', {
     category: 'config',
     defaults: {
       username: {}
@@ -48,7 +48,7 @@
   });
 </script>
 
-<script type="text/x-red" data-template-name="hb-event">
+<script type="text/x-red" data-template-name="HOOBS-event">
   <div class="form-row">
 		<label for="node-input-conf"><i class="icon-tag"></i> Pin </label>
 		<input type="text" id="node-input-conf">
@@ -66,7 +66,7 @@
 </script>
 
 
-<script type="text/x-red" data-help-name="hb-event">
+<script type="text/x-red" data-help-name="HOOBS-event">
   <p>Event emitter node for Homebridge accessories.</p>
   <p>This node represents a homebridge accessory/service and emits messages when the accessory state changes.</p>
 
@@ -93,7 +93,7 @@
 </script>
 
 <script type="text/javascript">
-  RED.nodes.registerType('hb-event', {
+  RED.nodes.registerType('HOOBS-event', {
     category: 'Homebridge',
     defaults: {
       name: {},
@@ -198,7 +198,7 @@
   });
 </script>
 
-<script type="text/x-red" data-template-name="hb-resume">
+<script type="text/x-red" data-template-name="HOOBS-resume">
   <div class="form-row">
 		<label for="node-input-conf"><i class="icon-tag"></i> Pin </label>
 		<input type="text" id="node-input-conf">
@@ -216,7 +216,7 @@
 </script>
 
 
-<script type="text/x-red" data-help-name="hb-resume">
+<script type="text/x-red" data-help-name="HOOBS-resume">
   <p>Accessory service state resume node,</p>
   <p>This node allows the creation of a stateful resume flow.  When a true/On message is input, it is passed directly to the output.  When the first false/Off message is received, the output is the accessories On state from prior to the most recent true/On.  If a second false/off is received it is passed directly to output.</p>
 
@@ -244,7 +244,7 @@
 </script>
 
 <script type="text/javascript">
-  RED.nodes.registerType('hb-resume', {
+  RED.nodes.registerType('HOOBS-resume', {
     category: 'Homebridge',
     defaults: {
       name: {},
@@ -352,7 +352,7 @@
 
 // Start of HAP Status
 
-<script type="text/x-red" data-template-name="hb-status">
+<script type="text/x-red" data-template-name="HOOBS-status">
   <div class="form-row">
 		<label for="node-input-conf"><i class="icon-tag"></i> Pin </label>
 		<input type="text" id="node-input-conf">
@@ -370,7 +370,7 @@
 </script>
 
 
-<script type="text/x-red" data-help-name="hb-status">
+<script type="text/x-red" data-help-name="HOOBS-status">
   <p>Status retrieval node for Homebridge accessories.</p>
   <p>This node provides endpoint for getting the status of homebridge accessories.  When it receives a message, it will poll the accessory for current status and emit a message with current value</p>
   <h3>Outputs</h3>
@@ -394,7 +394,7 @@
 </script>
 
 <script type="text/javascript">
-  RED.nodes.registerType('hb-status', {
+  RED.nodes.registerType('HOOBS-status', {
     category: 'Homebridge',
     defaults: {
       name: {},
@@ -502,7 +502,7 @@
 
 // Start of HAP Control
 
-<script type="text/x-red" data-template-name="hb-control">
+<script type="text/x-red" data-template-name="HOOBS-control">
   <div class="form-row">
 		<label for="node-input-conf"><i class="icon-tag"></i> Pin </label>
 		<input type="text" id="node-input-conf">
@@ -519,7 +519,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="hb-control">
+<script type="text/x-red" data-help-name="HOOBS-control">
   <p>Control node for Homebridge accessories.</p>
   <p>This node allows control of a single service of an homebridge accessory.</p>
   <h3>Inputs</h3>
